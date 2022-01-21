@@ -418,12 +418,36 @@ body {
     display: block;
   }
 
-  .nav-list,
   .btn-desktop {
     display: none;
   }
 
+  .nav-list {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(500%, -50%);
+    background-color: white;
+    border-radius: 11px;
+    height: 50vh;
+    transition: all .8s ease-in-out;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    box-shadow: 10px 10px 36px -3px rgba(0, 0, 0, 0.75);
+  }
+
   .nav-open .nav-list {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    visibility: visible;
+    pointer-events: all;
     position: absolute;
     top: 50vh;
     left: 50vw;
@@ -469,7 +493,6 @@ body {
     display: block;
   }
 
-  .nav-list,
   .btn-desktop {
     display: none;
   }

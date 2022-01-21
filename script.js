@@ -12,11 +12,15 @@ for (var i = 0; i < lists.length; i++) {
 }
 
 hamber.addEventListener("click", () => {
+  setTimeout(() => {
+    hero.classList.add("gradient-effect");
+  }, 800);
   navContainer.classList.add("nav-open");
-  hero.classList.add("gradient-effect");
 });
 
 close.addEventListener("click", () => {
-  navContainer.classList.remove("nav-open");
-  hero.classList.remove("gradient-effect");
+  setTimeout(() => {
+    navContainer.classList.remove("nav-open");
+    hero.classList.remove("gradient-effect");
+  }, 800);
 });
